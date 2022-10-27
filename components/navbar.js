@@ -7,9 +7,8 @@ const navigationItems = [
     'Sign in',
 ];
 
-const NavBar = () => {
-    return (
-        <nav className="inline-flex list-none font-medium text-hci-lila">
+const NavBar = () => (
+    <nav className="inline-flex list-none font-medium text-hci-lila">
             {navigationItems.map((item) => (
                 <li
                     key={item}
@@ -18,8 +17,7 @@ const NavBar = () => {
                     {item}
                 </li>
             ))}
-        </nav>
-    );
-};
+    </nav>  
+);
 
 export default NavBar;
